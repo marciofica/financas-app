@@ -4,7 +4,19 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: #f7f7f7;
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .25rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #f7f7f7;
+    border-radius: 0;
 }
 
 .card.card-green {
