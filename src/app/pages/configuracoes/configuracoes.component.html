@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row mt-2">
+    <div class="col-sm-3">
+      <div class="list-group">
+        <!--div class="list-group-item list-group-item-light">O que deseja configurar?</div -->
+        <a [routerLink] = "['plano-de-contas']" class="list-group-item list-group-item-action" [routerLinkActive]="['active']">Plano de contas</a>
+        <a [routerLink] = "['eventos-financeiros']" class="list-group-item list-group-item-action" [routerLinkActive]="['active']">Eventos financeiros</a>
+        <a [routerLink] = "['tipos-pagamentos']" class="list-group-item list-group-item-action" [routerLinkActive]="['active']">Tipos de pagamentos</a>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

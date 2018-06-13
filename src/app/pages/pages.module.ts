@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DashboardComponent } from './dashboard';
-import { PlanoDeContasComponent } from './plano-de-contas';
 import { RouterModule } from '@angular/router';
-import { EventosFinanceirosComponent } from './eventos-financeiros';
-import { TiposPagamentosComponent } from './tipos-pagamentos';
+
+import { DashboardComponent } from './dashboard';
+import { ConfiguracoesComponent, ConfiguracoesModule } from './configuracoes';
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    ConfiguracoesModule
   ],
   declarations: [
     DashboardComponent, 
-    PlanoDeContasComponent, 
-    EventosFinanceirosComponent, 
-    TiposPagamentosComponent
+    ConfiguracoesComponent
   ]
 })
 export class PagesModule { }

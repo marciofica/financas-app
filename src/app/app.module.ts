@@ -6,6 +6,7 @@ import { BsDropdownModule, CollapseModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import { PagesModule } from './pages';
+import { ConfiguracoesModule } from './pages/configuracoes';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { PagesModule } from './pages';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
+    ConfiguracoesModule,
     BsDropdownModule.forRoot(),
     CollapseModule.forRoot()
   ],
