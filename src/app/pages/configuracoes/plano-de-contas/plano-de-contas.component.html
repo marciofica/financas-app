@@ -13,10 +13,23 @@
             <h5 class="card-title">Criar um plano de contas</h5>
             <p class="card-text">O plano de contas ajuda você a organizar suas contas de forma simples e rápida.</p>
             <div class="text-center">
-                <a href="#" class="btn btn-secondary btn-outlet">Criar um</a>
+                <a [routerLink] = "['new']" class="btn btn-secondary btn-outlet">Criar um</a>
             </div>        
         </div>
     </div>
   </div>
+
+  <div class="col-sm-4">
+        <div class="card card-black">
+            <div class="card-body">
+                <h5 class="card-title">Plano 1</h5>
+                <div class="text-center">
+                    <a [routerLink] = "['10','edit']" class="btn btn-sm btn-primary btn-outlet">Editar</a>&nbsp;
+                    <a [routerLink] = "['10','delete']" class="btn btn-sm btn-secondary btn-outlet">Excluir</a>
+                </div>        
+            </div>
+        </div>
+      </div>
+
 </div>
 </div>

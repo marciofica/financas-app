@@ -1,0 +1,27 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a [routerLink] = "['/pages/dashboard']">Início</a></li>
+      <li class="breadcrumb-item"><a [routerLink] = "['/pages/configuracoes']">Configurações</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Novo plano de contas</li>
+  </ol>
+</nav>
+<div class="container-fluid">
+  <form>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="descricao">Descrição</label>
+          <input type="text" class="form-control" id="descricao" aria-describedby="descricao" maxlength="10">
+          <small id="descricaoHelp" class="form-text text-muted">Informe a descrição do plano de contas com até 10 caracteres.</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 text-right">
+          <button type="button" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+
+  </form>
+</div>

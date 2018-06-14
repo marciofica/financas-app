@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { PlanoDeContasComponent } from './plano-de-contas';
+import { PlanoDeContasComponent, CreateComponent, PlanoDeContasEditComponent, PlanoDeContasDeleteComponent } from './plano-de-contas';
 import { EventosFinanceirosComponent } from './eventos-financeiros';
 import { TiposPagamentosComponent } from './tipos-pagamentos';
 
@@ -14,7 +14,10 @@ import { TiposPagamentosComponent } from './tipos-pagamentos';
   declarations: [
     PlanoDeContasComponent, 
     EventosFinanceirosComponent, 
-    TiposPagamentosComponent
+    TiposPagamentosComponent, 
+    CreateComponent, 
+    PlanoDeContasEditComponent, 
+    PlanoDeContasDeleteComponent
   ]
 })
 export class ConfiguracoesModule { }
